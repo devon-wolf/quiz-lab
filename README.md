@@ -8,6 +8,12 @@ There should be:
 - three question prompts
 - a way for the user to see their results after taking the quiz
 
+### Relevant JS things:
+`alert()`  
+`confirm()`  
+`prompt()`  
+
+
 ### HTML Setup:
 - Some information, presented nicely with an image and some list items
 	- *so the user knows what to do*

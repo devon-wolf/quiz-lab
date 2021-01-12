@@ -12,13 +12,23 @@
 <body>
 
     <header>
-        <h1>Board Game Infodump!</h1>
+        <div class="header-text">
+            <h1>Board Game Infodump!</h1>
+            <p class="subtitle">
+                Featuring unverified factoids ripped straight from <a href="https://en.wikipedia.org/wiki/Board_game" title="Wikipedia: Board game">Wikipedia</a>
+            </p>
+        </div>
+        <div>
+            <img src="assets/randy-fath-KJMz5Tmbw0k-unsplash.jpg" height=300px width=450px>
+        </div>
     </header>
-    <p class="subtitle">
-        Featuring unverified factoids ripped straight from <a href="https://en.wikipedia.org/wiki/Board_game" title="Wikipedia: Board game">Wikipedia</a>
-    </p>
 
     <main>
+        <section class="jump">
+            <p>
+                Think you already know enough about board games to take the quiz? <a href=#quiz>Skip ahead</a>.
+            </p>
+        </section>
         <section class="overview">
             <h2>Overview</h2>
             <p>
@@ -38,6 +48,7 @@
                 Board games have been played, travelled and evolved in most cultures and societies throughout history. A number of important historical sites, artifacts and documents shed light on early board games such as Jiroft civilization gameboards in Iran. Senet, found in Predynastic and First Dynasty burials of Egypt, c. 3500 BC and 3100 BC respectively, is the oldest board game known to have existed. Senet was pictured in a fresco found in Merknera's tomb (3300–2700 BC). Also from predynastic Egypt is Mehen.
             </p>
         </section>
+
         <section class="contemporary">
             <h2>Board Games Today</h2>
             <p>
@@ -45,19 +56,24 @@
             </p>
         </section>
 
-        <section class="quiz">
-            <h2>That's Probably More Than Enough, Right?</h2>
+        <section class="quiz" id="quiz">
+            <h2>That's Probably Enough</h2>
             <p>
                 Do you think you're ready for a quiz?
             </p>
             
             <button id="quiz-button">Yes, quiz me!</button>
             
+            <div id="quiz-results-header"></div>
             <div id="quiz-results"></div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>
+            For more info, get a better reference source.
+        </p>
+    </footer>
 
     <script type="module" src="app.js"></script>
 

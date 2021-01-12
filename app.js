@@ -3,7 +3,9 @@
 import { administerQuiz } from './quiz.js';
 
 const quizButton = document.getElementById('quiz-button');
-const resultsBox = document.getElementById('quiz-results');
+const resultsBox1 = document.getElementById('quiz-results-header');
+const resultsBox2 = document.getElementById('quiz-results');
+
 
 // initialize state
 
@@ -15,8 +17,12 @@ quizButton.addEventListener('click', () => {
         return;
     }
 	
-	const userName = prompt('What should I call you?');
-	const quizResults = administerQuiz();
+    const userName = prompt('What should I call you?');
+    const quizResults = administerQuiz();
 
-    resultsBox.textContent = `Okay, ${userName} - here's how you did: ${quizResults} out of 3.`;
+    const resultsString1 = `Okay, ${userName} - here's how you did:`;
+    const resultsString2 = `${quizResults} out of 3`;
+
+    resultsBox1.textContent = resultsString1;
+    resultsBox2.textContent = resultsString2;
 });

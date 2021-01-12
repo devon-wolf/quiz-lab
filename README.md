@@ -4,15 +4,9 @@
 There should be:
 - an alert *(quiz takes place in the alerts)*
 - a confirmation (so the user can opt out)
-- name prompts (first and last)
+- a name prompt
 - three question prompts
 - a way for the user to see their results after taking the quiz
-
-### Relevant JS things:
-`alert()`  
-`confirm()`  
-`prompt()`  
-
 
 ### HTML Setup:
 - Some information, presented nicely with an image and some list items
@@ -41,7 +35,6 @@ There should be:
 		- evaluate the input (yes/no questions):
 			- need to determine how to decide something is a 'yes' - set criteria, write a function to run on the user input (anything NOT 'yes' will count as 'NO')
 	- first name
-	- last name
 	- question 1
 	- question 2
 	- question 3

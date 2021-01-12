@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
-import { countsAsYes } from './utils.js';
+
+import { administerQuiz } from './quiz.js';
 
 const quizButton = document.getElementById('quiz-button');
 const resultsBox = document.getElementById('quiz-results');
@@ -9,10 +10,13 @@ const resultsBox = document.getElementById('quiz-results');
 // set event listeners to update state and DOM
 
 quizButton.addEventListener('click', () => {
-	// console.log('Someone clicked me'); /* PASSED */
-    alert('Hi!');
-    confirm('Are you ready to take the quiz?');
+    const userReady = confirm('Hi! Are you ready to take the quiz?');
+    if (!userReady) {
+        return;
+    }
+	
 	const userName = prompt('What should I call you?');
-	countsAsYes(userName);
-    resultsBox.textContent = userName;
+	const quizResults = administerQuiz();
+
+    resultsBox.textContent = `Okay, ${userName} - here's how you did: ${quizResults} out of 3.`;
 });
